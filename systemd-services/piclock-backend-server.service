@@ -1,0 +1,12 @@
+[Unit]
+Description=Employee Manager Backend Server
+
+[Service]
+ExecStart=/home/pi/.nvm/versions/node/v8.9.4/bin/node /home/pi/employee-manager-app/backend-app-server/src/app.js
+User=pi
+Restart=always
+# Restart service after 5 seconds if node service crashes
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

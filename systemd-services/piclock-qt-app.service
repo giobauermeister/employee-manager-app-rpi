@@ -1,0 +1,12 @@
+[Unit]
+Description=PiClock Main App
+
+[Service]
+ExecStart=/home/pi/relogioPonto
+User=pi
+Restart=always
+# Restart service after 5 seconds if node service crashes
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

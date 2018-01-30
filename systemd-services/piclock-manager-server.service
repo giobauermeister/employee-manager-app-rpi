@@ -1,0 +1,12 @@
+[Unit]
+Description=Employee Manager PiClock VueJs App
+
+[Service]
+ExecStart=/home/pi/.nvm/versions/node/v8.9.4/bin/node /home/pi/employee-manager-app/vuejs-app-server/app.js
+User=pi
+Restart=always
+# Restart service after 5 seconds if node service crashes
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

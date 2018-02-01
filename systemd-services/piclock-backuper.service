@@ -1,0 +1,13 @@
+[Unit]
+Description=Database Backuper to Google Cloud Storage
+
+[Service]
+Environment=GOOGLE_APPLICATION_CREDENTIALS=/home/pi/piclock-9da9d442607a.json
+ExecStart=/home/pi/.nvm/versions/node/v8.9.4/bin/node /home/pi/employee-manager-app/database-backuper/app.js
+User=pi
+Restart=always
+# Restart service after 2 seconds if node service crashes
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+backend-app-server/node_modules/*
+backend-app-server/package-lock.json
+backend-app-server/package.json.bak
+database-backuper/node_modules/*
+database-backuper/package-lock.json
+vuejs-app-server/node_modules/*
+vuejs-app-server/package-lock.json
+vuejs-app-server/dist/static/userphotos/*
